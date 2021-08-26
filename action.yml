@@ -1,13 +1,17 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'BuildAngularElements'
+description: 'Action to build all angular elements in a given folder and concatenate them to a single bundle'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
+   scan:
+    description: Optional. Specify which directory (relative to the root) should be scanned for projects.
+    required: false
+    default: "./projects"
+   output-folder:
+    description: Optional. Specify in which directory (relative to the root) the elements should be placed.
+    required: false
+    default: "./elements"
 outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  output-folder: 
+    description: 'The folder where the elements are placed after the build.'
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'lib/main.js'
