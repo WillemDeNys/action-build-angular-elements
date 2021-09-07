@@ -18,6 +18,7 @@
   "dependencies": {
     "@actions/core": "^1.2.5",
     "@angular/cli": "12.2.2",
+    "async": "^3.2.1",
     "concat": "^1.0.3",
     "fs-extra": "^10.0.0"
   },
