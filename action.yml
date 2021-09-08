@@ -1,7 +1,8 @@
 name: 'BuildAngularElements'
 description: 'Action to build all angular elements in a given folder and concatenate them to a single bundle'
 inputs:
-  root-folder: Optional. Specify which directory (relative to the root) should be scanned for projects.
+  root-folder: 
+    description: Optional. Specify which directory (relative to the root) should be scanned for projects.
     required: false
     default: "./projects"
   scan:
