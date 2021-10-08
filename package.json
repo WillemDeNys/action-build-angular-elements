@@ -16,7 +16,7 @@
   "author": "Willem De Nys",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.6.0",
     "@angular/cli": "12.2.2",
     "async": "^3.2.1",
     "concat": "^1.0.3",
